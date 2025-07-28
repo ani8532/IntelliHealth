@@ -1,0 +1,121 @@
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 70px;
+}
+
+.profile-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.profile-container p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #374151;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="file"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.profile-container input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.profile-container button {
+  background-color: #6366f1;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #4f46e5;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  background-color: #ef4444;
+}
+
+.cancel-btn:hover {
+  background-color: #dc2626;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  background-color: #6366f1;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-container h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #111827;
+}
+
+.profile-container a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profile-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-container input,
+  .profile-container button {
+    font-size: 0.95rem;
+  }
+}

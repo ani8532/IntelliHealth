@@ -1,0 +1,39 @@
+.notification-container {
+  padding: 20px;
+  background: #f4f8ff;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-list li {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.notification-list li.unread {
+  background-color: #e8f0ff;
+}
+
+.notification-list li.read {
+  background-color: #f9f9f9;
+}
+
+.notification-list li p {
+  margin: 5px 0;
+}
+
+.notification-list li span {
+  font-size: 12px;
+  color: #555;
+}

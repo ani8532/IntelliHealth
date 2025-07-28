@@ -1,0 +1,48 @@
+.referral-history-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 60px;
+}
+
+.referral-history-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+.referral-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referral-table th,
+.referral-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.referral-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.referral-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.referral-table a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.error-text {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

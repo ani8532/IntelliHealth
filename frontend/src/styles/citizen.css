@@ -1,0 +1,273 @@
+/* ===========================
+   Citizen Dashboard & Profile
+   =========================== */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  margin-top: 70px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Icon styles */
+.icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+.history-button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-history {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-entry {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.form-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button:last-child {
+  background-color: #0d6efd;
+}
+
+.icon-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  background: #f0f4f7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Info section */
+.info-section {
+  margin-top: 40px;
+}
+
+.info-section h4 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.info-section li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* ===========================
+   Citizen Profile
+   =========================== */
+
+.doctor-profile {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.profile-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  background-color: #007bff;
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.info-section p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.info-section a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-section button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.info-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Edit Form */
+.edit-section .form-field {
+  margin-bottom: 15px;
+}
+
+.edit-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.edit-section input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button-group button:hover {
+  opacity: 0.9;
+}
+
+.button-group .cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.button-group button:not(.cancel-btn) {
+  background-color: #007bff;
+  color: white;
+}

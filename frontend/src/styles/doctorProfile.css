@@ -1,0 +1,140 @@
+.doctor-profile {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #f9f9fc;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #5e5eff;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-section p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.info-section strong {
+  display: inline-block;
+  width: 130px;
+  color: #444;
+}
+
+.edit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .doctor-profile {
+    padding: 1.2rem;
+  }
+
+  .profile-title {
+    font-size: 1.25rem;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .info-section strong {
+    width: 100px;
+    font-size: 0.95rem;
+  }
+
+  .form-field input {
+    font-size: 0.95rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

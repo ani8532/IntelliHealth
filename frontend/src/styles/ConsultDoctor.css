@@ -1,0 +1,147 @@
+.consult-container {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 320px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.doctor-card.selected {
+  border: 2px solid #007bff;
+  background-color: #e6f2ff;
+}
+
+.doctor-card input[type="radio"] {
+  margin-top: 10px;
+  transform: scale(1.2);
+}
+
+.avatar-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+
+.doctor-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.doctor-details {
+  flex: 1;
+  text-align: left;
+}
+
+.doctor-details h4 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.doctor-details hr {
+  margin: 6px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.consult-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.consult-options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.consult-options button:hover {
+  background-color: #0056b3;
+}
+
+.consult-message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.doctor-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 10px auto 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.dropdown-section {
+  margin: 15px 0;
+}
+
+.dropdown-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .avatar-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .doctor-details {
+    text-align: left;
+  }
+}

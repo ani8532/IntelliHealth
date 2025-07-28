@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for login/signup */
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dfefff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Auth form */
+.auth-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+/* Heading */
+.auth-form h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 0.3rem;
+}
+
+/* Welcome quote */
+.auth-welcome {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Input fields */
+.auth-form input {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Submit button */
+.auth-form button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer link */
+.auth-footer {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .auth-form {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .auth-welcome {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Dropdown Styling ---------- */
+.auth-form select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.auth-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+/* Optional: Add a custom dropdown arrow using background image or CSS triangle */
+.auth-form select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20fill%3D%22%23333%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpolygon%20points%3D%2210,15%2020,25%2030,15%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+/* Ensure dropdown doesn't overflow on mobile */
+@media (max-width: 400px) {
+  .auth-form select {
+    font-size: 0.95rem;
+  }
+}
+

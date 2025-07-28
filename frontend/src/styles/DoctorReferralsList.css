@@ -1,0 +1,40 @@
+.referral-list-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.referral-list-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.referral-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referral-table th,
+.referral-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.referral-table th {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.referral-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.referral-table a {
+  color: #2563eb;
+  text-decoration: underline;
+}
