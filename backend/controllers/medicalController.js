@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
 const FollowUp = require('../models/FollowUp');
-const MedicalEntry = require('../models/Medicalformmodel');
+const MedicalForm = require("../models/medicalformmodel");
 
 exports.predictMedical = async (req, res) => {
   const {
