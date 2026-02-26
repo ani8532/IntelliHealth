@@ -244,9 +244,7 @@ const MedicalForm = () => {
             <li>Heart: {(result.heartDiseaseRisk * 100).toFixed(1)}% - {result.suggestions.heart_disease}</li>
           </ul>
 
-          <h4>{t('medicalform.report_summary')}:</h4>
-          <pre>{result.report}</pre>
-
+          
           <div className="report-buttons">
             <button className="btn" onClick={generatePDF}>{t('medicalform.download_pdf')}</button>
             <button onClick={handleConsultDoctor}>{t('medicalform.consult_doctor')}</button>

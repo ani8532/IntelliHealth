@@ -4,7 +4,7 @@ const User = require('../models/User');
 const router = express.Router();
 const Notification = require('../models/Notification');
 const LifestyleEntry = require('../models/LifestyleEntry');
-const MedicalPrediction = require('../models/MedicalFormModel');
+const MedicalPrediction = require('../models/medicalformmodel');
 const { getRiskTrendsOverTime,getCombinedRiskData,getRiskCorrelations,getRiskByDiet,getSmokingAlcoholRisk ,getLabBasedRisk3D,getBloodPressureDistribution, 
   getAllFollowUpStats} = require('../controllers/adminController');
 

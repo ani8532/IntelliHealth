@@ -13,11 +13,11 @@ IntelliHealth is a multilingual healthcare platform that allows citizens, health
 - 📥 PDF generation for reports
 
 ## 📁 Project Structure
-frontend/ # React frontend
-backend/ # Node.js + Express backend
-ml-models/ # ML models for risk prediction
-scripts/ # Utility or data handling scripts
 
+- `frontend/` - React frontend
+- `backend/` - Node.js + Express backend
+- `ml-models/` - ML models for risk prediction
+- `scripts/` - Utility or data handling scripts
 
 ## 🛠️ Technologies
 
@@ -33,27 +33,38 @@ scripts/ # Utility or data handling scripts
 ```bash
 git clone https://github.com/ani8532/IntelliHealth.git
 cd IntelliHealth
+```
 
-2. Setup backend
-bash
-Copy code
+### 2. Setup backend
+
+```bash
 cd backend
 npm install
 npm start
-3. Setup frontend
-bash
-Copy code
+```
+
+### 3. Setup frontend
+
+```bash
 cd ../frontend
 npm install
 npm start
-👤 Author
-Aniket Naik – GitHub
+```
 
-📄 License
+## 🚀 Usage
+
+- Access the frontend at `http://localhost:3000` (default React port)
+- Backend API runs on `http://localhost:5000` (default Express port)
+- Use the dashboards and forms as per your user role (citizen, health worker, doctor, admin)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements and bug fixes.
+
+## 📄 License
+
 This project is licensed under the MIT License.
-Once created:
 
-```bash
-git add README.md
-git commit -m "Add README file"
-git push origin main
+## 👤 Author
+
+Aniket Naik – [GitHub](https://github.com/ani8532)

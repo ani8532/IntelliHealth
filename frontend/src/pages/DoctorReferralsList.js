@@ -16,7 +16,7 @@ const DoctorReferralsList = () => {
       });
       setReferrals(res.data);
     } catch (err) {
-      console.error(t('doctorReferrals.error_fetching'), err);
+      console.error(t('dr.doctorReferrals.error_fetching'), err);
     }
   };
 
@@ -33,86 +33,86 @@ const DoctorReferralsList = () => {
       alert(
         isOnline
           ? alreadySent
-            ? t('doctorReferrals.link_resent')
-            : t('doctorReferrals.link_sent')
-          : t('doctorReferrals.offline_confirmed')
+            ? t('dr.doctorReferrals.link_resent')
+            : t('dr.doctorReferrals.link_sent')
+          : t('dr.doctorReferrals.offline_confirmed')
       );
 
       fetchReferrals();
     } catch (err) {
-      console.error(t('doctorReferrals.confirm_failed'), err);
-      alert(t('doctorReferrals.confirm_error'));
+      console.error(t('dr.doctorReferrals.confirm_failed'), err);
+      alert(t('dr.doctorReferrals.confirm_error'));
     }
   };
 
   return (
     <div className="referral-list-container">
-      <h2>{t('doctorReferrals.heading')}</h2>
+      <h2>{t('dr.doctorReferrals.heading')}</h2>
 
       {referrals.length === 0 ? (
-        <p>{t('doctorReferrals.no_referrals')}</p>
+        <p>{t('dr.doctorReferrals.no_referrals')}</p>
       ) : (
         <table className="referral-table">
           <thead>
             <tr>
-              <th>{t('doctorReferrals.citizen')}</th>
-              <th>{t('doctorReferrals.referred_by')}</th>
-              <th>{t('doctorReferrals.type')}</th>
-              <th>{t('doctorReferrals.date')}</th>
-              <th>{t('doctorReferrals.time')}</th>
-              <th>{t('doctorReferrals.report')}</th>
-              <th>{t('doctorReferrals.video_link')}</th>
-              <th>{t('doctorReferrals.action')}</th>
+              <th>{t('dr.doctorReferrals.citizen')}</th>
+              <th>{t('dr.doctorReferrals.referred_by')}</th>
+              <th>{t('dr.doctorReferrals.type')}</th>
+              <th>{t('dr.doctorReferrals.date')}</th>
+              <th>{t('dr.doctorReferrals.time')}</th>
+              <th>{t('dr.doctorReferrals.report')}</th>
+              <th>{t('dr.doctorReferrals.video_link')}</th>
+              <th>{t('dr.doctorReferrals.action')}</th>
             </tr>
           </thead>
           <tbody>
             {referrals.map((ref) => (
               <tr key={ref._id}>
-                <td>{ref.citizenName}</td>
-                <td>{ref.referredBy}</td>
-                <td>{ref.type}</td>
-                <td>{ref.appointmentDate || 'N/A'}</td>
-                <td>{ref.appointmentTime || 'N/A'}</td>
-                <td>
+                <td data-label={t('dr.doctorReferrals.citizen')}>{ref.citizenName}</td>
+                <td data-label={t('dr.doctorReferrals.referred_by')}>{ref.referredBy}</td>
+                <td data-label={t('dr.doctorReferrals.type')}>{ref.type}</td>
+                <td data-label={t('dr.doctorReferrals.date')}>{ref.appointmentDate || 'N/A'}</td>
+                <td data-label={t('dr.doctorReferrals.time')}>{ref.appointmentTime || 'N/A'}</td>
+                <td data-label={t('dr.doctorReferrals.report')}>
                   {ref.report ? (
                     <a
                       href={`http://localhost:5000${ref.report.replace(/\\/g, '/')}`}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {t('doctorReferrals.view')}
+                      {t('dr.doctorReferrals.view')}
                     </a>
                   ) : (
                     'N/A'
                   )}
                 </td>
-                <td>
+                <td data-label={t('dr.doctorReferrals.video_link')}>
                   {ref.type === 'Online' && ref.videoLink ? (
                     <a href={ref.videoLink} target="_blank" rel="noreferrer">
-                      {t('doctorReferrals.join_call')}
+                      {t('dr.doctorReferrals.join_call')}
                     </a>
                   ) : (
                     '—'
                   )}
                 </td>
-                <td>
+                <td data-label={t('dr.doctorReferrals.action')}>
                   {ref.consultationConfirmed ? (
                     ref.type === 'Online' && ref.videoLink ? (
                       <button
                         onClick={() => handleConfirm(ref._id, true, true)}
                         className="resend-btn"
                       >
-                        {t('doctorReferrals.resend_link')}
+                        {t('dr.doctorReferrals.resend_link')}
                       </button>
                     ) : (
-                      t('doctorReferrals.confirmed')
+                      t('dr.doctorReferrals.confirmed')
                     )
                   ) : (
                     <button
                       onClick={() => handleConfirm(ref._id, ref.type === 'Online', false)}
                       className="confirm-btn"
                     >
-                      {t('doctorReferrals.confirm')}
+                      {t('dr.doctorReferrals.confirm')}
                     </button>
                   )}
                 </td>

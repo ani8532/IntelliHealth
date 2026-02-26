@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 
 # === Path ===
 BASE_PATH = 'C:/Users/Aniket Naik/OneDrive/Desktop/IntelliHealth/ml-models/data'
-DATA_FILE = os.path.join(BASE_PATH, 'lifestyle_synthetic_dataset.csv')
+DATA_FILE = os.path.join(BASE_PATH, "data",'lifestyle_synthetic_dataset.csv')
 
 # === Load Dataset ===
 df = pd.read_csv(DATA_FILE)
